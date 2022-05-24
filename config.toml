@@ -1,0 +1,88 @@
+baseURL = "https://www.heavybell.org/"
+languageCode = "en-us"
+title = "Heavybell.org"
+theme = "tufte"
+
+
+[params]
+  # Subtitle of the website
+  subtitle = "Failure to compute"
+  # Your name or the name of you company
+  copyrightHolder = "heavybell.org"
+  # Show the "Powered by Hugo-Tufte and Hugo." 
+  showPoweredBy = true
+  # Site wide kill switch
+  hidedate = false
+  # Uncomment for dark code blocks
+  # codeBlocksDark = true
+
+  # Common social website links, please comment the unused ones.
+  ## (if your favorite one is not in the list, please head to the footer menu below and add an entry)
+  ### Please note that some of the value below are only provided as an exemple, perhaps the computed isn't valid
+  github = "heavybell"
+  twitter = "heavybell_OS"
+  patreon = "heavybell"
+  youtube = "user/heavybell" # check the end of your youtube url https://www.youtube.com/<copy_this>
+  #medium = "slashformotion"
+  #reddit = "Slashformotion"
+  #stackoverflow = "16609732/slashformotion"
+  #instagram = "google"
+  #mastodon = "instance.url/@username"
+  #orcid = "0000-0003-0634-3275"
+  #google_scholar = "jm5QaHkAAAAJ"
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+
+[[menu.nav]]
+  name = "Home"
+  pre = "<i class='fas fa-home la-lg'></i>"
+  weight = -110 
+  identifier = "home"
+  url = "/"
+[[menu.nav]]
+  name = "Posts"
+  pre = "<i class='fas fa-book fa-lg'></i> "
+  weight = -100 
+  identifier = "posts"
+  url = "/posts"
+[[menu.nav]]
+  name = "Categories"
+  pre = "<i class='fas fa-tags fa-lg'></i> "
+  weight = -90 
+  identifier = "categories"
+  url = "/categories"
+[[menu.nav]]
+  name = "About"
+  pre = "<i class='fas fa-info-circle  fa-lg'></i> "
+  weight = -80 
+  identifier = "about"
+  url = "/about"
+[[menu.nav]]
+  name = "Source Code"
+  pre = "<i class='fab fa-github fa-lg'></i> "
+  weight = -70 
+  identifier = "github"
+  url = "https://github.com/heavybellOS"
+
+
+[[menu.footer]]
+  name = "Custom footer link"
+  pre = "<i class='fab fa-google fa-lg'></i> "
+  weight = -90 
+  identifier = "custom_link"
+  url = "https://google.com"
+
+
+# Don't change the settings below
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true # make the shortcodes work
+  [markup.highlight]
+      noClasses = false
+
+pygmentsUseClasses = true
+canonifyurls = true
